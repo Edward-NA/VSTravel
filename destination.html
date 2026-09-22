@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - VSTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/icons/logo.png" alt="VSTravel Logo">
+                    <span>VSTravel</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destination.html" class="active">Destination</a></li>
+                    <li><a href="travel-now.html">Travel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="book-trip-btn">
+                    <a href="travel-now.html" class="btn">Book Trip</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Destinations</h1>
+            <p>Explore the beauty of Indonesia with our curated destinations</p>
+        </div>
+    </section>
+
+    <!-- Popular Packages Section -->
+    <section class="popular-packages">
+        <div class="container">
+            <h2>Our Popular Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-img">
+                        <img src="assets/images/bali.jpg" alt="Bali Package">
+                        <div class="package-price">
+                            <span>From</span>
+                            <h4>IDR 5,500,000</h4>
+                            <span>per person</span>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <h3>Bali Explorer</h3>
+                        <p class="package-duration"><img src="assets/icons/clock.png" alt="Clock" class="icon"> 5 Days 4 Nights</p>
+                        <ul class="package-features">
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Hotel accommodation</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Daily breakfast</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Airport transfers</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Guided tours</li>
+                        </ul>
+                        <a href="#" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-img">
+                        <img src="assets/images/yogyakarta.jpg" alt="Yogyakarta Package">
+                        <div class="package-price">
+                            <span>From</span>
+                            <h4>IDR 4,200,000</h4>
+                            <span>per person</span>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <h3>Yogyakarta Cultural Tour</h3>
+                        <p class="package-duration"><img src="assets/icons/clock.png" alt="Clock" class="icon"> 4 Days 3 Nights</p>
+                        <ul class="package-features">
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Hotel accommodation</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Daily breakfast</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Airport transfers</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Temple tours</li>
+                        </ul>
+                        <a href="#" class="btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-img">
+                        <img src="assets/images/raja-ampat.jpg" alt="Raja Ampat Package">
+                        <div class="package-price">
+                            <span>From</span>
+                            <h4>IDR 12,800,000</h4>
+                            <span>per person</span>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <h3>Raja Ampat Adventure</h3>
+                        <p class="package-duration"><img src="assets/icons/clock.png" alt="Clock" class="icon"> 7 Days 6 Nights</p>
+                        <ul class="package-features">
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Resort accommodation</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Full board meals</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Airport transfers</li>
+                            <li><img src="assets/icons/check.png" alt="Check" class="icon"> Snorkeling trips</li>
+                        </ul>
+                        <a href="#" class="btn-small">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Filter -->
+    <section class="destination-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-item">
+                    <label for="region">Region:</label>
+                    <select id="region" name="region">
+                        <option value="all">All Regions</option>
+                        <option value="java">Java</option>
+                        <option value="bali">Bali & Nusa Tenggara</option>
+                        <option value="sumatra">Sumatra</option>
+                        <option value="kalimantan">Kalimantan</option>
+                        <option value="sulawesi">Sulawesi</option>
+                        <option value="papua">Papua</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="all">All Categories</option>
+                        <option value="beach">Beaches</option>
+                        <option value="mountain">Mountains</option>
+                        <option value="cultural">Cultural Sites</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="all">All Ratings</option>
+                        <option value="4.5">4.5 & Above</option>
+                        <option value="4.0">4.0 & Above</option>
+                        <option value="3.5">3.5 & Above</option>
+                    </select>
+                </div>
+                <button id="filter-btn" class="btn">Apply Filter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="destinations-grid">
+                <!-- Jakarta -->
+                <div class="destination-card" data-region="java" data-category="cultural" data-rating="4.7">
+                    <div class="destination-img">
+                        <img src="assets/images/jakarta.jpg" alt="Jakarta">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Jakarta</h3>
+                        <p class="province">Java</p>
+                        <p class="description">Indonesia's vibrant capital city offers a blend of modern skyscrapers, colonial architecture, and dynamic street life. Explore historical sites, world-class shopping, and diverse culinary experiences.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.7</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bali -->
+                <div class="destination-card" data-region="bali" data-category="beach" data-rating="4.9">
+                    <div class="destination-img">
+                        <img src="assets/images/bali.jpg" alt="Bali">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Bali</h3>
+                        <p class="province">Bali</p>
+                        <p class="description">Known as the Island of Gods, Bali enchants with its dramatic dances, colorful ceremonies, arts, and beautiful beaches. Experience spiritual temples, lush rice terraces, and world-class surfing.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.9</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raja Ampat -->
+                <div class="destination-card" data-region="papua" data-category="nature" data-rating="4.8">
+                    <div class="destination-img">
+                        <img src="assets/images/raja-ampat.jpg" alt="Raja Ampat">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Raja Ampat</h3>
+                        <p class="province">Papua</p>
+                        <p class="description">A paradise for divers and nature lovers, Raja Ampat boasts the richest marine biodiversity on earth. Discover pristine beaches, hidden lagoons, and stunning underwater landscapes in this remote archipelago.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.8</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yogyakarta -->
+                <div class="destination-card" data-region="java" data-category="cultural" data-rating="4.8">
+                    <div class="destination-img">
+                        <img src="assets/images/yogyakarta.jpg" alt="Yogyakarta">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Yogyakarta</h3>
+                        <p class="province">Java</p>
+                        <p class="description">The cultural heart of Java, Yogyakarta is home to the magnificent Borobudur and Prambanan temples. Experience traditional arts, royal heritage, and the mystical Mount Merapi volcano.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.8</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lombok -->
+                <div class="destination-card" data-region="bali" data-category="beach" data-rating="4.7">
+                    <div class="destination-img">
+                        <img src="assets/images/lombok.jpg" alt="Lombok">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Lombok</h3>
+                        <p class="province">West Nusa Tenggara</p>
+                        <p class="description">Less crowded than neighboring Bali, Lombok offers pristine beaches, the majestic Mount Rinjani, and the famous Gili Islands. Experience Sasak culture and world-class surfing spots.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.7</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lake Toba -->
+                <div class="destination-card" data-region="sumatra" data-category="nature" data-rating="4.6">
+                    <div class="destination-img">
+                        <img src="assets/images/lake-toba.jpg" alt="Lake Toba">
+                    </div>
+                    <div class="destination-details">
+                        <h3>Lake Toba</h3>
+                        <p class="province">North Sumatra</p>
+                        <p class="description">The world's largest volcanic lake, Lake Toba offers breathtaking landscapes and a unique cultural experience with the Batak people. Explore Samosir Island and enjoy the cool highland climate.</p>
+                        <div class="destination-footer">
+                            <div class="rating">
+                                <img src="assets/icons/star.png" alt="Star" class="icon">
+                                <span>4.6</span>
+                            </div>
+                            <a href="travel-now.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/icons/logo.png" alt="VSTravel Logo">
+                    <span>VSTravel</span>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram" class="icon"> Instagram</a></li>
+                            <li><a href="#"><img src="assets/icons/facebook.png" alt="Facebook" class="icon"> Facebook</a></li>
+                            <li><a href="#"><img src="assets/icons/twitter.png" alt="Twitter" class="icon"> Twitter</a></li>
+                            <li><a href="#"><img src="assets/icons/tiktok.png" alt="Tiktok" class="icon"> Tiktok</a></li>
+                            <li><a href="#"><img src="assets/icons/youtube.png" alt="Youtube" class="icon"> Youtube</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>About VSTravel</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">How To Book</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Flights</a></li>
+                            <li><a href="#">Bus & Travel</a></li>
+                            <li><a href="#">Car Rental</a></li>
+                            <li><a href="#">Taxi</a></li>
+                            <li><a href="#">Things To Do</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Download VSTravel App</h4>
+                        <ul>
+                            <li><a href="#"><img src="assets/icons/google-play.png" alt="Google Play" class="icon"> Google Play Store</a></li>
+                            <li><a href="#"><img src="assets/icons/apple.png" alt="Apple" class="icon"> Apple Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 VSTravel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
